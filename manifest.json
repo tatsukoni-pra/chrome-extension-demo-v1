@@ -1,0 +1,13 @@
+{
+  "name": "Chrome Extention Demo V1",
+  "action": {},
+  "manifest_version": 3,
+  "version": "0.1.0",
+  "description": "Youtube起動時に、Hello Youtube!を表示する",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["index.js"]
+    }
+  ]
+}
